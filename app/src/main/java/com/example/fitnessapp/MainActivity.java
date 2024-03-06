@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void CalorieClicked(View view){
-        Intent CalorieCounterClick = new Intent(this, CalorierTracker.class);
+        Intent CalorieCounterClick = new Intent(this, CalorieTracker.class);
         startActivity(CalorieCounterClick);
     }
 
