@@ -16,16 +16,6 @@
             android:name=".CalorieTracker"
             android:exported="false" />
         <activity
-            android:name=".CalorierTracker"
-            android:exported="false"
-            android:label="@string/title_activity_calorier_tracker"
-            android:theme="@style/Theme.FitnessApp" />
-        <activity
-            android:name=".Calorie_Tracker"
-            android:exported="false"
-            android:label="@string/title_activity_calorie_tracker"
-            android:theme="@style/Theme.FitnessApp" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
