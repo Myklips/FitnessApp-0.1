@@ -2,27 +2,41 @@ package com.example.fitnessapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.content.Intent;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.content.SharedPreferences;
 
 public class CalorieTracker extends AppCompatActivity {
-    public final static String CURRENT_CALORIES = "com.example.fitnessapp.MESSAGE";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calorie_tracker);
-        ((TextView)findViewById(R.id.CaloriesNumber)).setText(calDisp);
+        SharedPreferences pref1 = getPreferences((Context.MODE_PRIVATE));
+        CaloriesTracked = pref1.getInt("saved_calories_tracked", defaultVal);
+        //uses Shared Preferences to keep track of the calories counter after the activity ends
     }
+
     public int CaloriesTracked; //Sets int for tracking calories
+    public int defaultVal = 1;
     public String calDisp;
+
     public void MainMenuB(View v){
+        SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putInt("saved_calories_tracked", CaloriesTracked);
+        editor.apply();
+        //Adds the current calories tracked to the preferences database
+        //int dispCalls = sharedPref.getInt("saved_calories_tracked", defaultVal);
+        //Log.d("info", "num1 = " + dispCalls );
+        //The above checks if it is storing the calories properly
         Intent MainMenuC = new Intent(this, MainActivity.class);
         startActivity(MainMenuC);
-        MainMenuC.putExtra(CURRENT_CALORIES, calDisp);
         //This is for the main menu button
     }
     public void CaloriesEntered (View v){
@@ -35,7 +49,7 @@ public class CalorieTracker extends AppCompatActivity {
         calDisp = String.valueOf(CaloriesTracked);
         ((TextView)findViewById(R.id.CaloriesNumber)).setText(calDisp);
 
-        Log.v("info", "Num = " + calDisp);
+        Log.d("info", "Num = " + calDisp);
 
 
     }
