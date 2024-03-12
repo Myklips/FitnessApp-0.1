@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     public void CalorieClicked(View view){
         Intent CalorieCounterClick = new Intent(this, CalorieTracker.class);
         startActivity(CalorieCounterClick);
+        //This is to change over to the Calorie Tracker
     }
 
     public void WorkoutsClicked(View view){

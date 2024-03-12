@@ -52,7 +52,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/CaloriesNumber"
         android:layout_width="19dp"
         android:layout_height="41dp"
         android:layout_marginStart="196dp"
