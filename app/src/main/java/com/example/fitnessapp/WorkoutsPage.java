@@ -20,4 +20,9 @@ public class WorkoutsPage extends AppCompatActivity {
         startActivity(MainMenuC);
         //This is for the main menu button
     }
+
+    public void ArmsClicked(View v){
+        Intent ArmsPage = new Intent(this, WorkoutDisplay.class);
+        startActivity(ArmsPage);
+    }
 }
