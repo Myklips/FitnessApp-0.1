@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WorkoutsPage">
+
     <Button
         android:id="@+id/button3"
         style="@style/Widget.Material3.Button.IconButton.Outlined"
@@ -22,32 +23,56 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="601dp"
         android:text="Arms"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="81dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="239dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="444dp"
         android:text="Chest"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="239dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="283dp"
         android:text="Back"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="400dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="549dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="134dp"
         android:text="Lower Body"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="549dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
