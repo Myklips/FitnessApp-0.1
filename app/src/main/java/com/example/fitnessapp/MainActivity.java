@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void WorkoutsClicked(View view){
-
+        Intent WorkoutsPageClicked = new Intent(this, WorkoutsPage.class);
+        startActivity(WorkoutsPageClicked);
     }
 }
