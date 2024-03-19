@@ -5,5 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WorkoutsPage">
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.Material3.Button.IconButton.Outlined"
+        android:layout_width="104dp"
+        android:layout_height="50dp"
+        android:background="#3F51B5"
+        android:onClick="MainMenuB"
+        android:stateListAnimator="@anim/nav_default_exit_anim"
+        android:text="Main Menu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
