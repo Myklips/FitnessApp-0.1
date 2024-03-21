@@ -11,24 +11,28 @@
         style="@style/Widget.Material3.Button.IconButton.Outlined"
         android:layout_width="104dp"
         android:layout_height="50dp"
+        android:layout_marginEnd="307dp"
+        android:layout_marginBottom="681dp"
         android:background="#3F51B5"
         android:onClick="MainMenuB"
         android:stateListAnimator="@anim/nav_default_exit_anim"
         android:text="Main Menu"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="135dp"
+        android:layout_height="65dp"
         android:layout_marginStart="160dp"
         android:layout_marginTop="82dp"
         android:layout_marginEnd="163dp"
         android:layout_marginBottom="601dp"
-        android:text="Arms"
         android:onClick="ArmsClicked"
+        android:text="Arms"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,13 +40,14 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="135dp"
+        android:layout_height="65dp"
         android:layout_marginStart="161dp"
         android:layout_marginTop="239dp"
         android:layout_marginEnd="162dp"
         android:layout_marginBottom="444dp"
-        android:text="Chest"
+        android:text="Upper Body"
+        android:onClick="UpperClicked"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,30 +55,19 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="135dp"
+        android:layout_height="65dp"
         android:layout_marginStart="161dp"
         android:layout_marginTop="400dp"
         android:layout_marginEnd="162dp"
         android:layout_marginBottom="283dp"
-        android:text="Back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="549dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginBottom="134dp"
         android:text="Lower Body"
+        android:onClick="LowerClicked"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
